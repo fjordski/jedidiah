@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .join
+    .text-center
+      h4 JOIN
+      form#contact-form.form(action='https://formspree.io/jedidiah.freiheit@gmail.com', method='POST', role='form')
+        .form-group
+          label.form-label(for='name') Name
+          input#name.form-control(type='text', name='name', tabindex='1', required='')
+        .form-group
+          label.form-label(for='email') Email
+          input#email.form-control(type='email', name='email', tabindex='2', required='')
+        .form-group
+          label.form-label(for='subject') Subject
+          input#subject.form-control(type='text', name='subject', tabindex='3')
+        .form-group
+          label.form-label(for='message') Message
+          textarea#message.form-control(rows='5', cols='50', name='message', tabindex='4', required='')
+        .text-center
+          button.btn.btn-start-order(type='submit') SEND
