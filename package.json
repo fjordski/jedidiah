@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
+  },
+  "main": "app.js",
+  "engines": {
+    "node": "6.11.3"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
