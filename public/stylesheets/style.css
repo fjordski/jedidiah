@@ -170,7 +170,7 @@ section{
 }
 
 /* Small monitor */
-@media (max-width: 979px){
+@media (max-width:1800px){
   nav>a{
     padding: 0 1.5em;
   }
@@ -470,3 +470,4 @@ h4 a {
   display: block;
   /* effect 3D */
 }
+
