@@ -9,6 +9,15 @@ body {
   text-align: center;
 }
 
+
+.jedidiah-jumbo {
+  height: 700px;
+  max-width: 80%;
+  margin: 0 auto;
+  background-image: url("../images/jedhome.jpg");
+  background-size: cover;
+}
+
 a {
   color: #00B7FF;
 }
@@ -254,6 +263,12 @@ section{
   .container{
     width: 90%;
   }
+
+
+.jedidiah-jumbo {
+  max-width: 300px;
+  max-height: 300px;
+}
   nav{
     height: 0;
     overflow: hidden;
@@ -457,6 +472,7 @@ canvas {
       max-width: 90%;
   }
 }
+
 
 .jedidiah {
   top: 0;
