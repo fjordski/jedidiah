@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var http = require("http");
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -30,6 +31,10 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+setInterval(function() {
+    http.get("http://www.joinjedidiah.com");
+}, 300000);
 
 // error handler
 app.use(function(err, req, res, next) {
